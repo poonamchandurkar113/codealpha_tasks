@@ -1,0 +1,63 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("=================================");
+        System.out.println("     AI CHATBOT ASSISTANT");
+        System.out.println("=================================");
+        System.out.println("Type 'bye' to exit.\n");
+        while (true) {
+            System.out.print("You: ");
+            String input = sc.nextLine().toLowerCase();
+            if (input.equals("bye")) {
+                System.out.println("Bot: Goodbye! Have a great day.");
+                break;
+            }
+            else if (input.contains("hello") || input.contains("hi")) {
+                System.out.println("Bot: Hello! How can I help you?");
+            }
+            else if (input.contains("how are you")) {
+                System.out.println("Bot: I'm doing great. Thanks for asking!");
+            }
+            else if (input.contains("your name")) {
+                System.out.println("Bot: I am an AI Chatbot developed in Java.");
+            }
+            else if (input.contains("time")) {
+                System.out.println("Bot: Please check your system clock for the current time.");
+            }
+            else if (input.contains("date")) {
+                System.out.println("Bot: Please check your system calendar for today's date.");
+            }
+            else if (input.contains("java")) {
+                System.out.println("Bot: Java is a popular object-oriented programming language.");
+            }
+            else if (input.contains("html")) {
+                System.out.println("Bot: HTML is used to create web page structures.");
+            }
+            else if (input.contains("css")) {
+                System.out.println("Bot: CSS is used for styling web pages.");
+            }
+            else if (input.contains("javascript")) {
+                System.out.println("Bot: JavaScript makes web pages interactive.");
+            }
+            else if (input.contains("ai")) {
+                System.out.println("Bot: Artificial Intelligence enables machines to simulate human intelligence.");
+            }
+            else if (input.contains("internship")) {
+                System.out.println("Bot: Internships help students gain practical experience and skills.");
+            }
+            else if (input.contains("college")) {
+                System.out.println("Bot: College life is a great opportunity to learn and grow.");
+            }
+            else if (input.contains("thank")) {
+                System.out.println("Bot: You're welcome!");
+            }
+
+            else {
+                System.out.println("Bot: Sorry, I don't understand that. Can you rephrase?");
+            }
+        }
+
+        sc.close();
+    }
+}
